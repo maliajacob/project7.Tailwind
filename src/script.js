@@ -1,0 +1,1 @@
+const listOfQueryitems = document.querySelectorAll("div")
