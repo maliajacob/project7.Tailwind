@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="script.js">
+    <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Netflix</title>
 </head>
 <body>
     <header>
         <nav class="flex justify-between p-8 bg-black fixed w-full z-10">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-8 fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-8 text-white hover:opacity-50">
                 <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
             </svg>
             <div class="font-bold text-3xl text-red-600">NETFLIX</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-white hover:opacity-50">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
         </nav>
@@ -23,60 +22,67 @@
     <div class="bg-slate-950">
         <div class="text-white p-2 pt-32 px-6 font-bold text-lg">Trending Now</div>
         <div class="flex overflow-scroll px-6">
-            <img class="h-80 m-2" src="images/blacklist.jpeg" alt="">
-            <img class="h-80 m-2" src="images/hawaiiFiveO.jpeg" alt="">
-            <img class="h-80 m-2" src="images/brooklyn99.jpeg" alt="">
+            <img class="w-96 m-2" src="images/blacklist.jpeg" alt="">
+            <img class="w-96 m-2" src="images/hawaiiFiveO.jpeg" alt="">
+            <img class="w-96 m-2" src="images/brooklyn99.jpeg" alt="">
         </div>
         <div class="text-white pt-8 px-6 font-bold text-lg">Continue Watching</div>
-        <div class="flex overflow-scroll px-4">
-            <figure>
-                <div class="">
-                    <img class="h-44 m-2 block" src="images/redNotice.jpeg" alt="">
-                    <div class="absolute z-20"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute text-white"></svg>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-                    </svg></div>
-                      
+        <div class="flex px-4 relative">
 
+            <figure>
+                <div>
+                    <!-- <div class="px-20"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 stroke-1 absolute opacity-60 text-gray-500 fill-zinc-600 translate-y-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" /></svg>
+                    </div> -->
+                    <img class="w-80 p-2" src="images/redNotice.jpeg" alt="">
                 </div>
-                <figcaption class="text-white m-2 flex justify-between h-12">Red Notice <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-2">
+                <figcaption class="text-white m-2 flex justify-between">Red Notice <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                  </svg></div>
+                    </svg></div>
+                </figcaption>
             </figure>
             <figure>
-                <img class="h-44 m-2" src="images/adamProject.jpeg" alt="">
-                <figcaption class="text-white m-2 flex justify-between">The Adam Project <br>S1, E1: Pilot <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                  </svg></div>
-                  </figcaption>
+                <div>
+                    <!-- <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 stroke-1 absolute opacity-60 text-gray-500 fill-zinc-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" /></svg>
+                    </div> -->
+                    <img class="w-80 p-2" src="images/adamProject.jpeg" alt="">
+                    <figcaption class="text-white m-2 flex justify-between">The Adam Project <br>S1, E1: Pilot <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                      </svg></div>
+                    </figcaption>
+                </div>
             </figure>
         </div>
-
+        
         <div class="text-white px-6 font-bold text-lg">Recently Added</div>
         <div class="flex overflow-scroll px-4 pb-20">
-            <img class="w-44 m-2" src="images/insideOut.jpeg" alt="">
-            <img class="w-44 m-2" src="images/moana.jpeg" alt="">
-            <img class="w-44 m-2" src="images/youngWoman.jpeg" alt="">
-            <img class="w-44 m-2" src="images/freakierFriday.jpeg" alt="">
-            <img class="w-44 m-2" src="images/mufasa.jpeg" alt="">
-            <img class="w-44 m-2" src="images/snowWhite.jpeg" alt="">
-            <img class="w-44 m-2" src="images/captainAmerica.jpeg" alt="">
-            <img class="w-44 m-2" src="images/liloStitch.jpeg" alt="">
-            <img class="w-44 m-2" src="images/elio.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/insideOut.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/moana.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/youngWoman.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/freakierFriday.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/mufasa.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/snowWhite.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/captainAmerica.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/liloStitch.jpeg" alt="">
+            <img class="w-32 m-2 sm:w-44" src="images/elio.jpeg" alt="">
         </div>
     </div>
     <footer class="flex justify-around p-3 bg-black bottom-0 fixed w-full z-10 ">
-        <figure class="text-white text-xs">
+        <figure class="text-white text-xs hover:opacity-50">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg><figcaption>Home</figcaption>   
         </figure>
-        <figure class="text-white text-xs">
+        <figure class="text-white text-xs hover:opacity-50">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
               </svg><figcaption>Account</figcaption>   
         </figure>
         
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
